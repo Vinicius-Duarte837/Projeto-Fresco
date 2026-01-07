@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --principal: #FF8800;
+    --branco: #FFF;
+    --cinza: #d4d4d4;
+    --secundario: #C66300;
+    --texto: #292827;
+}
+
+::selection{
+    color: #000;
+    background-color: var(--principal);
+}
+
+::-moz-selection{
+    color: #000;
+    background-color: var(--principal);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Josefin Sans";
+}
+
+h1{
+    font-family: "Berkshire Swash";
+    color: var(--texto);
+}
+
+#social{
+    display: flex;
+    background-color: var(--principal);
+    font-size: 1.1em;
+    padding: 9px;
+    padding-right: 80px;
+    justify-content: flex-end;
+}
+
+#social > a{
+    color: var(--branco);
+    padding: 0px 3px;
+}
+
+#social > a:hover{
+    color: #000;
+}
+
+header{
+    display: flex;
+    background-color: var(--branco);
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    border: 1px solid var(--cinza);
+}
+
+#logo{
+    padding-left: 28px;
+}
+
+header > nav > a{
+    color: #000;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0px 15px;
+}
+
+#mobile-menu{
+    display: none;
+}
+
+header > nav > a:hover, header > nav > a:active{
+    color: #FF8800;
+}
+
+#btn-contato{
+    background-color: var(--principal);
+    color: var(--branco);
+    font-family: "Josefin Sans";
+    font-size: 1em;
+    padding: 12px;
+    width: 120px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#btn-contato:hover{
+    background-color: var(--secundario);
+}
+
+#itens{
+    display: none;
+}
+
+#rodape{
+    background-image: linear-gradient(#292827d2, #292827d2), url(Imagens/pizzaria-hero-fundo02.jpg);
+    height: 550px;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#rodape > i{
+    color: var(--principal);
+    font-size: 60px;
+}
+
+#rodape > h3{
+    color: #FFF;
+    font-family: "Berkshire Swash";
+    font-size: 38px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+#rodape > p{
+    color: #FFF;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+footer{
+    background-color: var(--texto);
+    color: var(--branco);
+    text-align: center;
+    padding: 10px 0px;
+    border-top: 1px solid #FFF;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--principal);
+}
+
+@media screen and (max-width: 845px) {
+    #social{
+        padding-right: 20px;
+    }
+
+    header{
+        padding: 18px 20px;
+    }
+
+    #mobile-menu{
+        display: inline-block;
+        font-size: 1.2em;
+        background-color: var(--principal);
+        color: var(--branco);
+        padding: 12px;
+        border-radius: 50%;
+    }
+
+    #mobile-menu:hover{
+        background-color: var(--secundario);
+    }
+
+    nav > a, #btn-contato{
+        display: none;
+    }
+
+    #logo{
+        margin: auto;
+    }
+
+    #itens{
+        list-style: none;
+    }
+
+    #itens a{
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        background-color: var(--branco);
+        color: #000;
+        text-align: center;
+        border-top: 2px solid var(--principal);
+    }
+
+    #itens a:active{
+        background-color: var(--principal);
+    }
+
+    #rodape{
+        height: 300px;
+    }
+
+    #rodape > h3{
+        font-size: 26px;
+    }
+
+    #rodape > p{
+        font-size: 60px;
+        padding-top: 10px;
+    }
+}

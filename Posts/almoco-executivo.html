@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/76e34bc225.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styleGeral.css">
+    <link rel="stylesheet" href="stylePosts.css">
+    <link rel="shortcut icon" href="../Imagens/favicon.png" type="image/x-icon">
+    <title>Almoço Executivo - Fresco</title>
+</head>
+<body onresize="mudouTamanho()" onload="getYear()">
+    <main>
+        <div id="social">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <header> 
+            <a href="../home.html" id="logo"><img src="../Imagens/fresco-logo-pequeno.png" alt="Fresco-Pizzaria"></a>
+            <nav>
+                <a href="../home.html">Home</a>
+                <a href="../cardapio.html">Cardápio</a>
+                <a href="../quem-somos.html">Quem Somos</a>
+                <a href="../noticias.html" style="color: #ff8800;">Notícias</a>
+                <button id="btn-contato" onclick="document.location='../contato.html'">Contato</button>
+                <span id="mobile-menu" onclick="menuMobile()"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+            </nav>
+        </header>
+        <menu id="itens">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../cardapio.html">Cardápio</a></li>
+                <li><a href="../quem-somos.html">Quem Somos</a></li>
+                <li><a href="../noticias.html" style="background-color: #ff8800;">Notícias</a></li>
+                <li><a href="../contato.html">Contato</a></li>
+            </ul>
+        </menu>
+        <article>
+            <h1>Almoço Executivo</h1>
+            <p id="desc">4 de Janeiro de 2026 / Peixes, Pratos Executivos, Saladas</p>
+            <br>
+            <p class="paragrafo-inicial">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sunt delectus et. Ipsa fugiat cumque accusamus architecto, nobis eius laudantium delectus fuga esse sequi exercitationem numquam incidunt dolores quasi fugit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi repellendus aut porro. Quis, molestiae adipisci! Architecto temporibus placeat quis necessitatibus sint, animi obcaecati porro inventore eos id fugit esse voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro rerum, amet illum asperiores iste architecto provident molestias beatae delectus saepe quibusdam magnam laudantium voluptatum perferendis tenetur. Vero aut ducimus ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic dolor quae eaque voluptas praesentium nisi dolorum quis ullam voluptate unde, rerum necessitatibus nihil a. Culpa quas neque soluta illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vitae nam aliquam eius sunt autem id, cupiditate tenetur neque perferendis magnam hic modi ex dolore provident odit ut minima tempora!</p>
+            <br>
+            <div id="galeria">
+                <div class="foto" id="foto1">
+                    <p>Pratos sempre frescos</p>
+                </div>
+                <div class="foto" id="foto2">
+                    <p>Cozinha de primeira</p>
+                </div>
+                <div class="foto" id="foto3">
+                    <p>Melhores peixes</p>
+                </div>
+                <div class="foto" id="foto4">
+                    <p>Massas deliciosas</p>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sunt delectus et. Ipsa fugiat cumque accusamus architecto, nobis eius laudantium delectus fuga esse sequi exercitationem numquam incidunt dolores quasi fugit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi repellendus aut porro. Quis, molestiae adipisci! Architecto temporibus placeat quis necessitatibus sint, animi obcaecati porro inventore eos id fugit esse voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro rerum, amet illum asperiores iste architecto provident molestias beatae delectus saepe quibusdam magnam laudantium voluptatum perferendis tenetur. Vero aut ducimus ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic dolor quae eaque voluptas praesentium nisi dolorum quis ullam voluptate unde, rerum necessitatibus nihil a. Culpa quas neque soluta illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vitae nam aliquam eius sunt autem id, cupiditate tenetur neque perferendis magnam hic modi ex dolore provident odit ut minima tempora!</p>
+        </article>
+        <nav id="navegacao" style="flex-direction: row-reverse;">
+            <div id="anterior" style="display: none;">
+                <a href="#">
+                    <p><strong>&LeftArrow; ANTERIOR</strong></p>
+                    <p>Nada</p>
+                </a>
+            </div>
+            <div id="proximo">
+                <a href="happy-hour.html">
+                    <p><strong>PRÓXIMO &RightArrow;</strong></p>
+                    <p>Happy Hour!</p>
+                </a>
+            </div>
+        </nav>     
+    </main>
+    <footer>
+        <p>Copyright &copy; <span id="year"></span> Fresco | Criado por <a href="https://www.cursoemvideo.com" target="_blank">Curso em Video</a></p>
+    </footer>
+    <script src="../scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/76e34bc225.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styleGeral.css">
+    <link rel="stylesheet" href="styleNews.css">
+    <link rel="shortcut icon" href="Imagens/favicon.png" type="image/x-icon">
+    <title>Fresco - Notícias</title>
+</head>
+<body onresize="mudouTamanho()" onload="getYear()">
+    <main>
+        <div id="social">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <header> 
+            <a href="home.html" id="logo"><img src="Imagens/fresco-logo-pequeno.png" alt="Fresco-Pizzaria"></a>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="quem-somos.html">Quem Somos</a>
+                <a href="noticias.html" style="color: #ff8800;">Notícias</a>
+                <button id="btn-contato" onclick="document.location='contato.html'">Contato</button>
+                <span id="mobile-menu" onclick="menuMobile()"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+            </nav>
+        </header>
+        <menu id="itens">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li><a href="noticias.html" style="background-color: #ff8800;">Notícias</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </menu>
+        <section id="titulo">
+            <h1>Notícias</h1>
+            <img src="Imagens/divisor-preto.png" alt="divisor-preto">
+        </section>
+        <section id="post-grid">
+            <div class="posts">
+                <img src="Imagens/prato02-300x255.jpg" alt="spaghetti">
+                <h4>Receita de Spaghetti Ramiro</h4>
+                <span id="data">4 de Janeiro de 2026</span>
+                <p>Veja nosso passo a passo de como criar um de nossos pratos mais populares</p>
+                <button class="post-btn" onclick="document.location='Posts/receita-spaghetti.html'">Ler mais</button>
+            </div>
+            <div class="posts">
+                <img src="Imagens/restaurante01.jpg" alt="happyhour">
+                <h4>Happy Hour!</h4>
+                <span id="data">4 de Janeiro de 2026</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sunt delectus et. Ipsa fugiat cumque…</p>
+                <button class="post-btn" onclick="document.location='Posts/happy-hour.html'">Ler mais</button>
+            </div>
+            <div class="posts">
+                <img src="Imagens/avocado-barbecue-cooked-725991.jpg" alt="almoco">
+                <h4>Almoço Executivo</h4>
+                <span id="data">4 de Janeiro de 2026</span>
+                <p>Conheça mais sobre o nosso excelente almoço executivo disponível de segunda à sexta a partir…</p>
+                <button class="post-btn" onclick="document.location='Posts/almoco-executivo.html'">Ler mais</button>
+            </div>
+        </section>    
+    </main>
+    <footer>
+        <p>Copyright &copy; <span id="year"></span> Fresco | Criado por <a href="https://www.cursoemvideo.com" target="_blank">Curso em Video</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

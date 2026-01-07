@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+main{
+    background-color: #eee;
+}
+
+article{
+    margin: auto;
+    background-color: white;
+    max-width: 52vw;
+    padding: 40px;
+    margin-top: 60px;
+}
+
+#desc{
+    color: var(--principal);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+article > p{
+    margin-top: 10px;
+    line-height: 1.5em;
+    color: #272829;
+}
+
+.paragrafo-inicial::first-letter{
+    font-size: 8em;
+    float: left;
+    line-height: 0.6em;
+    padding-right: 10px;
+}
+
+#happyhour{
+    float: right;
+    margin-left: 20px;
+}
+
+#galeria{
+    height: 400px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.foto{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+#foto1{
+    background-image: linear-gradient(to bottom, #ffffff00, #31313180), url(../Imagens/blur-chef-close-up-262978.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#foto2{
+    background-image: linear-gradient(to bottom, #ffffff00, #31313180), url(../Imagens/pizzaria-hero-fundo02.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#foto3{
+    background-image: linear-gradient(to bottom, #ffffff00, #31313180), url(../Imagens/avocado-barbecue-cooked-725991.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#foto4{
+    background-image: linear-gradient(to bottom, #ffffff00, #31313180), url(../Imagens/basil-blur-cheese-1279330.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto > p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+#navegacao{
+    margin: auto;
+    width: 52vw;
+    margin-top: 40px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navegacao a{
+    text-decoration: none;
+    color: #272829;
+    font-size: 15px;
+    line-height: 1.6em;
+    transition: .4s;
+}
+
+#navegacao a:hover{
+    color: var(--secundario);
+    transition: .4s;
+}
+
+#proximo{
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    article{
+        max-width: 90vw;
+    }
+
+    #navegacao{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    article{
+        max-width: 95vw;
+        padding: 20px;
+    }
+
+    #navegacao{
+        width: 95vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #navegacao a{
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+
+    #galeria{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: 800px;
+    }
+
+    #happyhour{
+        display: block;
+        margin: auto;
+        margin-left: 0;
+        float: none;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #espaguete{
+        width: 100%;
+    }
+}

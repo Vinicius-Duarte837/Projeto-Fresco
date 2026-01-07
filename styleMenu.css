@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+#introducao{
+    background-image: linear-gradient(#000000b0, #000000b0), url(Imagens/pizzaria-hero-fundo03.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#introducao h1{
+    color: #fff;
+    font-size: 100px;
+    font-weight: 400;
+}
+
+.intro{
+    margin-left: 75px;
+}
+
+#massas{
+    background-image: linear-gradient(#ffffffe7, #ffffffe7), url(Imagens/folha-fundo-02.jpg);
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 70px 0px;
+}
+
+#pizzas{
+    background-color: #fffaf2;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding: 70px 0px;
+}
+
+.prato-img{
+    width: 500px;
+}
+
+.prato-img > img{
+    width: 93%;
+}
+
+#pizzas > .prato-img{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.lista-de-precos{
+    width: 450px;
+    padding: 40px 10px 30px 10px;
+}
+
+.lista-de-precos > h1{
+    color: var(--principal);
+    font-size: 52px;
+    font-weight: 400;
+}
+
+.lista-de-precos > img{
+    width: 170px;
+}
+
+.item-da-lista{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.item-da-lista > h3{
+    color: #272829;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.item-da-lista > p{
+    color: var(--secundario);
+    font-size: 26px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lista-de-precos > p{
+    margin-top: 10px;
+    color: #313131;
+}
+
+@media screen and (max-width: 768px) {
+    .prato-img{
+        width: 350px;
+    }
+
+    .lista-de-precos{
+        width: 380px;
+        padding-top: 0px;
+    }
+
+    .lista-de-precos > h1{
+        font-size: 40px;
+    }
+
+    .item-da-lista{
+        padding-top: 25px;
+    }
+
+    .item-da-lista > h3{
+        font-size: 24px;
+    }
+
+    .item-da-lista > p{
+        font-size: 24px;
+    }
+
+    .lista-de-precos > p{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #introducao{
+        height: 500px;
+    }
+
+    .intro{
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .intro > h1{
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .intro > img{
+        width: 250px;
+    }
+
+    #massas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pizzas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prato-img{
+        width: 320px;
+    }
+
+    .prato-img > img{
+        width: 85%;
+        display: block;
+        margin: auto;
+    }
+
+    .lista-de-precos{
+        width: 360px;
+    }
+
+    .lista-de-precos > h1{
+        font-size: 50px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .lista-de-precos > img{
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .item-da-lista > h3{
+        font-size: 24px;
+    }
+
+    .item-da-lista > p{
+        font-size: 24px;
+    }
+
+    .lista-de-precos > p{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .lista-de-precos{
+        width: 320px;
+        padding: 0px 15px;
+    }
+
+    .item-da-lista > h3{
+        font-size: 22px;
+    }
+
+    .item-da-lista > p{
+        font-size: 22px;
+    }
+
+    .lista-de-precos > p{
+        font-size: 13px;
+    }
+}

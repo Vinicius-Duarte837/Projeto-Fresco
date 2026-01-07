@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+#introducao{
+    background-image: linear-gradient(#000000b0, #000000b0), url(Imagens/bg-quem-somos.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#introducao h1{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.intro{
+    margin-left: 75px;
+}
+
+#descricao{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.desc-left{
+    width: 50%;
+    padding: 25px;
+}
+.desc-left > h3{
+    color: #272829;
+    font-size: 32px;
+    line-height: 1.2em;
+}
+
+.desc-left > p{
+    color: #272829;
+    font-size: 15px;
+    line-height: 1.7em;
+    padding-top: 15px;
+}
+
+.desc-right{
+    width: 50%;
+}
+
+.desc-right > img{
+    height: 630px;
+    width: 480px;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+#mais-info{
+    background-color: #fffaf2;
+}
+
+#comodidade > h3{
+    color: #272829;
+    font-size: 26px;
+    font-family: "Josefin Sans";
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 30px;
+}
+
+.info-horizontal{
+    display: flex;
+    justify-content: center;
+}
+
+.info-horizontal i{
+    color: var(--principal);
+    font-size: 22px;
+    padding-right: 20px;
+}
+
+.info-horizontal > p{
+    font-size: 20px;
+    color: #272829;
+    padding-right: 40px;
+}
+
+.info-horizontal > img{
+    padding: 0px 50px 100px 50px;
+}
+
+#recomendacao > h3{
+    color: #272829;
+    font-size: 26px;
+    font-family: "Josefin Sans";
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    #descricao{
+        max-width: 100vw;
+        margin: 0;
+    }
+
+    .desc-left > h3{
+        font-size: 24px;
+    }
+
+    .desc-left > p{
+        font-size: 14px;
+        line-height: 1.35em;
+    }
+
+    .desc-right{
+        display: flex;
+        align-items: center;
+    }
+
+    .desc-right > img{
+        margin: 0;
+        width: 95%;
+        height: auto;
+    }
+
+    .info-horizontal > i{
+        font-size: 18px;
+    }
+    
+    .info-horizontal > p{
+        font-size: 16px;
+    }
+
+    .info-horizontal > img{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #introducao{
+        height: 500px;
+    }
+
+    #introducao h1{
+        font-size: 70px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        padding: 0px 10px;
+    }
+
+    #descricao{
+        flex-direction: column;
+    }
+
+    .desc-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desc-left > h3{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .desc-left > p{
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.5em;
+    }
+
+    .desc-right{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .desc-right > img{
+        width: 50%;
+    }
+
+    #comodidade > h3, #recomendacao > h3{
+        padding-top: 70px;
+    }
+
+    .info-horizontal{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-horizontal > i{
+        font-size: 22px;
+    }
+
+    .info-horizontal > p{
+        font-size: 20px;
+        margin-bottom: 30px;
+        padding-right: 0px;
+    }
+
+    .info-horizontal > img{
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .desc-right > img{
+        width: 90%;
+    }
+}

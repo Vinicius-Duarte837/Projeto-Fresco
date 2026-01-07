@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/76e34bc225.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styleGeral.css">
+    <link rel="stylesheet" href="styleMenu.css">
+    <link rel="shortcut icon" href="Imagens/favicon.png" type="image/x-icon">
+    <title>Fresco - Cardápio</title>
+</head>
+<body onresize="mudouTamanho()" onload="getYear()">
+    <main>
+        <div id="social">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <header> 
+            <a href="home.html" id="logo"><img src="Imagens/fresco-logo-pequeno.png" alt="Fresco-Pizzaria"></a>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="cardapio.html" style="color: #ff8800;">Cardápio</a>
+                <a href="quem-somos.html">Quem Somos</a>
+                <a href="noticias.html">Notícias</a>
+                <button id="btn-contato" onclick="document.location='contato.html'">Contato</button>
+                <span id="mobile-menu" onclick="menuMobile()"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+            </nav>
+        </header>
+        <menu id="itens">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cardapio.html" style="background-color: #ff8800;">Cardápio</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </menu>
+        <section id="introducao">
+            <div class="intro">
+                <h1>Menu</h1>
+                <img src="Imagens/barra-horizontal.png" alt="barra-horizontal">
+            </div>
+        </section>
+        <section id="massas">
+            <div class="prato-img">
+                <img src="Imagens/cardapio-massas.png" alt="cardapio-massas">
+            </div>
+            <div class="lista-de-precos">
+                <h1>Massas</h1>
+                <img src="Imagens/divisor-preto.png" alt="divisor-preto">
+                <div class="item-da-lista">
+                    <h3>Spaghetti Ramiro</h3>
+                    <p>R$25</p>
+                </div>
+                <p>Molho de alho e óleo e outra folha (maior)</p>
+                <div class="item-da-lista">
+                    <h3>Fettucine Curso em Vídeo</h3>
+                    <p>R$29</p>
+                </div>
+                <p>Molho de carne moída e uma folha</p>
+                <div class="item-da-lista">
+                    <h3>Ravioli Dourado</h3>
+                    <p>R$32</p>
+                </div>
+                <p>Ravioli de ricota acompanhado de salada de legumes</p>
+                <div class="item-da-lista">
+                    <h3>Spaghetti com Almôndegas</h3>
+                    <p>R$44</p>
+                </div>
+                <p>Porção grande acompanhada de molho de tomate</p>
+            </div>
+        </section>
+        <section id="pizzas">
+            <div class="prato-img">
+                <img src="Imagens/cardapio-pizzas.png" alt="cardapio-pizzas">
+            </div>
+            <div class="lista-de-precos">
+                <h1>Pizzas</h1>
+                <img src="Imagens/divisor-preto.png" alt="divisor-preto">
+                <div class="item-da-lista">
+                    <h3>Pizza de Pepperoni</h3>
+                    <p>R$27</p>
+                </div>
+                <p>Pepperoni, azeitonas e queijo mozzarela</p>
+                <div class="item-da-lista">
+                    <h3>Pizza Guanabara</h3>
+                    <p>R$32</p>
+                </div>
+                <p>Um pouco de tudo (e mais)</p>
+                <div class="item-da-lista">
+                    <h3>Pizza de Sorvete</h3>
+                    <p>R$35</p>
+                </div>
+                <p>Para os amantes de doces!</p>
+                <div class="item-da-lista">
+                    <h3>Pizza de Bacon com Calabresa</h3>
+                    <p>R$46</p>
+                </div>
+                <p>Incluída borda recheada!</p>
+            </div>
+        </section>
+        <section id="massas">
+            <div class="prato-img">
+                <img src="Imagens/cardapio-pratos.png" alt="cardapio-pratos">
+            </div>
+            <div class="lista-de-precos">
+                <h1>Pratos</h1>
+                <img src="Imagens/divisor-preto.png" alt="divisor-preto">
+                <div class="item-da-lista">
+                    <h3>Porção de Petiscos</h3>
+                    <p>R$24</p>
+                </div>
+                <p>Perfeito para uma boquinha entre amigos</p>
+                <div class="item-da-lista">
+                    <h3>Salada Fitness</h3>
+                    <p>R$28</p>
+                </div>
+                <p>Saldável salada diversificada</p>
+                <div class="item-da-lista">
+                    <h3>Peixe a Hostnet</h3>
+                    <p>R$35</p>
+                </div>
+                <p>Acompanha salada e legumes</p>
+                <div class="item-da-lista">
+                    <h3>Il Re del Castello</h3>
+                    <p>R$50</p>
+                </div>
+                <p>Especial da casa, para quem está com muita fome</p>
+            </div>
+        </section> 
+        <section id="rodape">
+            <i class="fa-solid fa-phone-flip"></i>
+            <h3>Ligue e faça sua reserva</h3>
+            <p>3004-8660</p>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; <span id="year"></span> Fresco | Criado por <a href="https://www.cursoemvideo.com" target="_blank">Curso em Video</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

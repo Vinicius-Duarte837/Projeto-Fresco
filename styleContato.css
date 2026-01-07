@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+#introducao{
+    background-image: linear-gradient(#31313180, #31313180), url(Imagens/pizzaria-hero-fundo03.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#introducao h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+#introducao p{
+    color:#fff;
+    font-size: 60px;
+    margin: 20px 0px 30px 0px
+}
+
+#intro{
+    margin-left: 100px;
+}
+
+#formulario{
+    background-image: linear-gradient(#ffffffe7, #ffffffe7), url(Imagens/folha-fundo-02.jpg);
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-attachment: fixed;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-titulo > h2{
+    font-family: "Berkshire Swash";
+    font-size: 50px;
+    color: #272829;
+    font-weight: 400;
+    text-align: center;
+}
+
+.form-titulo > hr{
+    border: none;
+    height: 2px;
+    width: 180px;
+    margin: auto;
+    background-color: #272829;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-titulo > p{
+    text-align: center;
+    color: #313131;
+    margin-bottom: 50px;
+}
+
+.form-contato{
+    width: 78vw;
+    margin-top: 50px;
+}
+
+.coluna-dividida{
+    display: flex;
+    justify-content: space-between;
+}
+
+.campo-titulo{
+    color: #272829;
+    font-weight: 800;
+    padding: 15px 0;
+}
+
+.campo-desc{
+    color: #555555;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+#inome, #iemail, #itel, #iunidade, #imsg{
+    height: 40px;
+    border: 1px solid #969696;
+    border-radius: 4px;
+    margin: 20px 0px 5px 0px;
+    padding: 0px 10px;
+    font-size: 18px;
+    font-family: "Josefin Sans";
+    color: #313131;
+}
+
+#inome, #itel{
+    width: 100%;
+}
+
+#iemail{
+    width: 97%;
+}
+
+#form-email, #form-tel{
+    width: 50%;
+}
+
+#iunidade{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#imsg{
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Josefin Sans";
+    color: #313131;
+    font-size: 18px;
+}
+
+#ispam{
+    border: 1px solid #969696;
+    border-radius: 4px;
+    height: 16px;
+    width: 16px;
+}
+
+#spam{
+    padding-left: 10px;
+}
+
+#form-btn{
+    height: 40px;
+    width: 80px;
+    margin-top: 20px;
+    background-color: var(--principal);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    transition: .4s;
+}
+
+#form-btn:hover{
+    background-color: var(--secundario);
+    transition: .4s;
+}
+
+.obrigatorio{
+    color: red;
+}
+
+#inome:focus, #iemail:focus, #itel:focus, #iunidade:focus, #imsg:focus{
+    border: 2px solid var(--principal);
+    outline: none;
+}
+
+.erro-campo{
+    display: none;
+    margin-bottom: 25px;
+    margin-top: -10px;
+    color: red;
+}
+
+iframe{
+    height: 500px;
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+@media screen and (max-width: 768px) {
+    .coluna-dividida{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #form-email, #form-tel{
+        width: 100%;
+    }
+
+    #iemail{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #introducao{
+        height: 500px;
+        align-items: center;
+    }
+
+    #intro{
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #intro > h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #intro > p{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .form-titulo > h2{
+        font-size: 40px;
+    }
+
+    iframe{
+        height: 350px;
+    }
+}

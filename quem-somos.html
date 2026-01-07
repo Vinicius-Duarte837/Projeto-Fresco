@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/76e34bc225.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styleGeral.css">
+    <link rel="stylesheet" href="styleQuemSomos.css">
+    <link rel="shortcut icon" href="Imagens/favicon.png" type="image/x-icon">
+    <title>Fresco - Quem Somos</title>
+</head>
+<body onresize="mudouTamanho()" onload="getYear()">
+    <main>
+        <div id="social">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <header> 
+            <a href="home.html" id="logo"><img src="Imagens/fresco-logo-pequeno.png" alt="Fresco-Pizzaria"></a>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="quem-somos.html" style="color: #ff8800;">Quem Somos</a>
+                <a href="noticias.html">Notícias</a>
+                <button id="btn-contato" onclick="document.location='contato.html'">Contato</button>
+                <span id="mobile-menu" onclick="menuMobile()"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+            </nav>
+        </header>
+        <menu id="itens">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="quem-somos.html" style="background-color: #ff8800;">Quem Somos</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </menu>
+        <section id="introducao">
+            <div class="intro">
+                <h1>Quem somos</h1>
+                <img src="Imagens/barra-horizontal.png" alt="barra-horizontal">
+            </div>
+        </section>
+        <section id="descricao">
+            <div class="desc-left">
+                <img src="Imagens/folha-fundo-01.png" alt="folhinha">
+                <h3>Nosso restaurante é um coletivo de gente apaixonada criando os melhores pratos da culinária italiana</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sunt delectus et. Ipsa fugiat cumque accusamus architecto, nobis eius laudantium delectus fuga esse sequi exercitationem numquam incidunt dolores quasi fugit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi repellendus aut porro. Quis, molestiae adipisci! Architecto temporibus placeat quis necessitatibus sint, animi obcaecati porro inventore eos id fugit esse voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro rerum, amet illum asperiores iste architecto provident molestias beatae delectus saepe quibusdam magnam laudantium voluptatum perferendis tenetur. Vero aut ducimus ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vitae nam aliquam eius sunt autem id, cupiditate tenetur neque perferendis magnam hic modi ex dolore provident odit ut minima tempora!</p>
+            </div>
+            <div class="desc-right"><img src="Imagens/quem-somos-img1.jpg" alt="quem-somos"></div>
+        </section>
+        <section id="mais-info">
+            <div id="comodidade">
+                <h3>Comodidade</h3>
+                <div class="info-horizontal">
+                    <p><i class="fa-solid fa-wifi"></i> Wifi</p>
+                    <p><i class="fa-solid fa-smoking"></i> Área de fumantes</p>
+                    <p><i class="fa-solid fa-music"></i> Música ao vivo</p>
+                    <p><i class="fa-solid fa-car"></i> Estacionamento</p>
+                </div>
+            </div>
+            <div id="recomendacao">
+                <h3>Recomendado por</h3>
+                <div class="info-horizontal">
+                    <img src="Imagens/tripadvisorlogo1-free-img.png" alt="trip advisor">
+                    <img src="Imagens/yelp-free-img.png" alt="yelp">
+                    <img src="Imagens/google-reviews-free-img.png" alt="google">
+                    <img src="Imagens/fb-free-imng.png" alt="facebook">
+                </div>
+            </div>
+        </section>
+        <section id="rodape">
+            <i class="fa-solid fa-phone-flip"></i>
+            <h3>Ligue e faça sua reserva</h3>
+            <p>3004-8660</p>
+        </section>    
+    </main>
+    <footer>
+        <p>Copyright &copy; <span id="year"></span> Fresco | Criado por <a href="https://www.cursoemvideo.com" target="_blank">Curso em Video</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

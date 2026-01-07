@@ -1,0 +1,587 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.inicio{
+    background-image: linear-gradient(#31313170, #31313170), url(Imagens/pizzaria-hero-fundo01.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inicio > img{
+    width: 250px;
+}
+
+.inicio > h1{
+    color: #fff;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 1.75em;
+}
+
+.inicio > h3{
+    color: var(--principal);
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.35em;
+}
+
+.inicio > p{
+    color: #FFF;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.97em;
+}
+
+.introducao{
+    background-image: linear-gradient(#ffffffc5, #ffffffc5), url(Imagens/folha-fundo-02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+#intro{
+    max-width: 350px;
+    text-align: left;
+}
+
+#intro-prefix{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--texto);
+}
+
+#intro > h2{
+    font-family: "Berkshire Swash";
+    color: var(--secundario);
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+
+#intro-subtitulo{
+    font-family: "Montserrat";
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#intro-descricao{
+    color: #272829;
+    line-height: 1.7em;
+    margin: 25px 0px;
+}
+
+#btn-quem-somos{
+    background-color: #272829;
+    color: #FFF;
+    font-family: "Josefin Sans";
+    font-size: 1em;
+    border: none;
+    width: 200px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: .4s;
+}
+
+#btn-quem-somos > i{
+    font-size: 0.8em;
+}
+
+#btn-quem-somos:hover{
+    background-color: var(--principal);
+    transition: .4s;
+}
+
+#pizza{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36%;
+}
+
+#pizza > img{
+    width: 75%;
+}
+
+#horario{
+    background-image: url(Imagens/restaurante02.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 380px;
+}
+
+#horario h3, #horario p{
+    color: #FFF;
+    text-align: center;
+}
+
+#horario > div{
+    margin-top: 430px;
+}
+
+#horario h3{
+    font-family: "Berkshire Swash";
+    font-weight: 400;
+    font-size: 50px;
+}
+
+#horario p{
+    font-weight: 700;
+    padding: 20px;
+}
+
+#cardapio{
+    background-color: #FFFAF2;
+    padding: 40px 70px;
+}
+
+#cardapio > img{
+    display: block;
+    margin: auto;
+}
+
+#cardapio > h2{
+    font-family: "Berkshire Swash";
+    color: var(--secundario);
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+    padding-top: 8px;
+}
+
+#cardapio > p{
+    color: #272829;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 11px;
+    padding-bottom: 70px;
+}
+
+#cardapio-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.cardapio-destaque{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardapio-destaque > img{
+    width: 27%;
+}
+
+.cardapio-destaque-desc{
+    padding-left: 10px;
+    width: 350px;
+}
+
+.cardapio-destaque-desc > h3{
+    color: #272829;
+    font-size: 25px;
+    line-height: 1.5em;
+    font-weight: 600;
+}
+
+.cardapio-destaque-desc > p{
+    color: #272829;
+    line-height: 1.3em;
+}
+
+.cardapio-preco{
+    color: var(--secundario);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.5em;
+    font-style: italic;
+    text-align: right;
+}
+
+#btn-cardapio{
+    display: block;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    color: #FFF;
+    background-color: var(--principal);
+    border: none;
+    font-family: "Josefin Sans";
+    padding: 15px 80px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: .4s;
+}
+
+#btn-cardapio:hover{
+    background-color: var(--secundario);
+    transition: .4s;
+}
+
+#happy-hour{
+    background-image: linear-gradient(#ffffffc5, #ffffffc5), url(Imagens/folha-fundo-02.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 120px;
+}
+
+#happy-hour-info{
+    text-align: center;
+    width: 550px;
+    padding: 15px 5px;
+}
+
+#happy-hour-info > i{
+    color: #850424;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+#happy-hour-info > span{
+    color: #272829;
+    display: block;
+    margin: 10px;
+    font-size: 16px;
+}
+
+#happy-hour-info > h3{
+    color: var(--secundario);
+    font-family: "Berkshire Swash";
+    font-size: 36px;
+    font-weight: 400;
+}
+
+#happy-hour-info > p{
+    color: #272829;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px;
+    line-height: 1.7em;
+}
+
+#btn-noticias{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #FFF;
+    background-color: var(--principal);
+    border: none;
+    font-family: "Josefin Sans";
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: .4s;
+}
+
+#btn-noticias:hover{
+    background-color: var(--secundario);
+    transition: .4s;
+}
+
+#depoimentos{
+    max-width: 1400px;
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.depoimento-imagem{
+    width: 550px;
+    padding: 25px;
+}
+
+.depoimento-imagem > img{
+    width: 270px;
+    display: block;
+    margin: auto;
+    opacity: 0.25;
+}
+
+.depoimento-imagem > h3{
+    font-family: "Berkshire Swash";
+    color: var(--secundario);
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    margin-top: 40px;
+}
+
+.depoimento-info{
+    width: 550px;
+    padding: 50px 0px;
+}
+
+.depoimento-info > img{
+    border-radius: 50%;
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.depoimento-info > p{
+    color: #272829;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.6em;
+    margin-top: 10px;
+}
+
+.depoimento-info > h4{
+    color: #272829;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.depoimento-info > span{
+    color: #6c6c6c;
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-style: italic;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .introducao{
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+
+    #intro{
+        max-width: 500px;
+    }
+
+    #pizza{
+        padding: 40px 0px 20px 0px;
+    }
+
+    #horario{
+        width: 450px;
+    }
+
+    #cardapio{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #cardapio > h2{
+        font-size: 40px;
+    }
+
+    #cardapio > p{
+        font-size: 25px;
+    }
+
+    .cardapio-destaque{
+        flex-direction: column;
+    }
+
+    .cardapio-destaque > img{
+        width: 54%;
+    }
+
+    .cardapio-destaque-desc{
+        padding-left: 0;
+    }
+
+    .cardapio-destaque-desc > p{
+        font-size: 14px;
+    }
+
+    .cardapio-preco{
+        text-align: left;
+    }
+
+    #happy-hour{
+        padding: 80px 0px;
+        flex-direction: column;
+    }
+
+    #depoimentos{
+        max-width: 750px;
+        padding: 30px 20px;
+    }
+
+    .depoimento-imagem{
+        width: 350px;
+        padding: 0;
+    }
+
+    .depoimento-imagem > img{
+        width: 200px;
+        padding: 0;
+    }
+
+    .depoimento-info{
+        width: 350px;
+    }
+
+    .depoimento-info > img{
+        width: 80px;
+    }
+
+    .depoimento-info > p{
+        font-size: 16px;
+    }
+
+    .depoimento-info > h4{
+        font-size: 28px;
+    }
+
+    .depoimento-info > span{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .inicio{
+        height: 500px;
+    }
+
+    .inicio > h1{
+        font-size: 80px;
+    }
+
+    .inicio > h3{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .inicio > p{
+        font-size: 20px;
+    }
+
+    #introducao{
+        padding: 0px;
+    }
+
+    #intro{
+        /*max-width: 300px;*/
+        padding: 0px 10px;
+        text-align: center;
+    }
+
+    #intro > h2{
+        font-size: 50px;
+    }
+
+    #pizza{
+        width: 50%;
+    }
+
+    #horario{
+        width: 300px;
+    }
+
+    #cardapio-home{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+        
+    #cardapio > h2{
+        font-size: 40px;
+    }
+
+    #cardapio > p{
+        font-size: 20px;
+    }
+
+    .cardapio-destaque-desc{
+        max-width: 300px;
+        padding: 0px 20px;
+    }
+
+    .cardapio-destaque > p{
+        padding-left: 20px;
+    }
+
+    .cardapio-destaque > img{
+        width: 70%;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    .cardapio-destaque{
+        margin-bottom: 30px;
+    }
+
+    #btn-cardapio{
+        margin-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #happy-hour-img > img{
+        width: 300px;
+        height: auto;
+    }
+
+    #happy-hour-info{
+        width: 300px;
+    }
+
+    #depoimentos{
+        padding-top: 0px;
+        justify-content: center;
+    }
+
+    .depoimento-imagem > img{
+        width: 100px;
+        padding: 0;
+    }
+
+    .depoimento-imagem > h3{
+        margin-top: 10px;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .depoimento-info{
+        padding: 25px 0px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    #pizza{
+        width: 80%;
+    }
+
+    .cardapio-destaque > img{
+        display: block;
+        margin: auto;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
